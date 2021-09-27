@@ -20,6 +20,15 @@ public void login() {
 }
 
 @Test
+public void logintoothertest() {
+	WebDriverManager.chromedriver().setup();
+	WebDriver driver = new ChromeDriver();
+	
+	driver.get("http://amazon.com");
+	driver.close();
+}
+
+@Test
 public void loginfirefox() {
 	WebDriverManager.firefoxdriver().setup();
 	WebDriver driver = new FirefoxDriver();
